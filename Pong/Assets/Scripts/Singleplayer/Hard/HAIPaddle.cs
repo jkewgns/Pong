@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIPaddle : MonoBehaviour
+public class HAIPaddle : MonoBehaviour
 {
     public float speed = 5f;
     public Rigidbody2D rb;
@@ -14,7 +14,7 @@ public class AIPaddle : MonoBehaviour
     void Start()
     {
         ball = GameObject.FindGameObjectWithTag("Ball");
-        aiReactionTime = Random.Range(0.25f, 0.3f); // Set initial random reaction time
+        aiReactionTime = Random.Range(0.15f, 0.2f); // Set initial random reaction time
         //Beginner AI = 0.4f - 0.5f
         //Normal AI = 0.25f - 0.3f
         //Hard AI = 0.15f - 0.2f;
@@ -40,7 +40,7 @@ public class AIPaddle : MonoBehaviour
 
             nextMoveTime = Time.time + aiReactionTime;
 
-            aiReactionTime = Random.Range(0.25f, 0.3f); // Randomize reaction time each update, change this with aiReactionTime so it's the same
+            aiReactionTime = Random.Range(0.15f, 0.2f); // Randomize reaction time each update, change this with aiReactionTime so it's the same
         }
     }
 

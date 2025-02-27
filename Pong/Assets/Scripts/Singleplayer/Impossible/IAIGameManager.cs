@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class AIGameManager : MonoBehaviour
+public class IAIGameManager : MonoBehaviour
 {
     [Header("Ball")]
     public GameObject ball;
@@ -63,7 +63,7 @@ public class AIGameManager : MonoBehaviour
 
         if (player2Paddle != null)
         {
-            AIPaddle aiPaddle = player2Paddle.GetComponent<AIPaddle>();
+            IAIPaddle aiPaddle = player2Paddle.GetComponent<IAIPaddle>();
             if (aiPaddle != null)
             {
                 aiPaddle.Reset();

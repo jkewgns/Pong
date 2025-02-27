@@ -262,7 +262,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 44373768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8405c1073aed8a45a89231f2e98e529, type: 3}
+  m_Script: {fileID: 11500000, guid: d862083295cae2f4cb1a52ac944fe5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer1Goal: 0
@@ -996,8 +996,8 @@ GameObject:
   - component: {fileID: 641117416}
   - component: {fileID: 641117415}
   m_Layer: 0
-  m_Name: Player1
-  m_TagString: Player
+  m_Name: Player1Paddle
+  m_TagString: Player1Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1463,30 +1463,14 @@ GameObject:
   - component: {fileID: 1203496757}
   - component: {fileID: 1203496756}
   - component: {fileID: 1203496755}
-  - component: {fileID: 1203496754}
+  - component: {fileID: 1203496759}
   m_Layer: 0
-  m_Name: Player2
-  m_TagString: Player
+  m_Name: Player2Paddle
+  m_TagString: Player2Paddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1203496754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203496753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fea566e47da4d9f4088a6c5f22986f7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer1: 0
-  speed: 5
-  rb: {fileID: 1203496755}
-  startPosition: {x: 0, y: 0, z: 0}
 --- !u!50 &1203496755
 Rigidbody2D:
   serializedVersion: 4
@@ -1626,6 +1610,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1203496759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203496753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ff3d4626f3f8c4baf694671ed44637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rb: {fileID: 1203496755}
 --- !u!1 &1211608742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,33 +1633,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1211608744}
-  - component: {fileID: 1211608743}
+  - component: {fileID: 1211608745}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: BAIGameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1211608743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211608742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae600e3e51ff4b14583e52041383d4a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 201454207}
-  player1Paddle: {fileID: 641117414}
-  player1Goal: {fileID: 1570746847}
-  player2Paddle: {fileID: 1203496753}
-  player2Goal: {fileID: 44373768}
-  Player1Text: {fileID: 1620108140}
-  Player2Text: {fileID: 326935384}
 --- !u!4 &1211608744
 Transform:
   m_ObjectHideFlags: 0
@@ -1677,6 +1656,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1211608745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211608742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207e586246dbd9b4b9be9d4e45d77599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 201454207}
+  player1Paddle: {fileID: 641117414}
+  player1Goal: {fileID: 1570746847}
+  player2Paddle: {fileID: 1203496753}
+  player2Goal: {fileID: 44373768}
+  Player1Text: {fileID: 1620108140}
+  Player2Text: {fileID: 326935384}
 --- !u!1 &1570746847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,7 +1815,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1570746847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8405c1073aed8a45a89231f2e98e529, type: 3}
+  m_Script: {fileID: 11500000, guid: d862083295cae2f4cb1a52ac944fe5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer1Goal: 1

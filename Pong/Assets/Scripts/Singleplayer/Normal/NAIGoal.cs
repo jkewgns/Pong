@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIGoal : MonoBehaviour
+public class NAIGoal : MonoBehaviour
 {
     public bool isPlayer1Goal;
-    private AIGameManager gameManager;
+    private NAIGameManager gameManager;
 
     private void Start()
     {
-        gameManager = GameObject.Find("AIGameManager")?.GetComponent<AIGameManager>();
+        gameManager = GameObject.Find("NAIGameManager")?.GetComponent<NAIGameManager>();
 
         if (gameManager == null)
         {
