@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: da5bab6cb3dbe3c4ea90db1d01e49d36
+  - enabled: 1
+    path: Assets/Scenes/DifficultySelect.unity
+    guid: 8bafb24d7ae1b1b418bd5a9935ecce3e
+  - enabled: 1
     path: Assets/Scenes/LocalGame.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Singleplayer/BeginnerSingleplayer.unity
+    guid: 6e1f973337a646344994f1765b0d841b
+  - enabled: 1
+    path: Assets/Scenes/Singleplayer/NormalSingleplayer.unity
+    guid: dec091995b66d9b47880a9087edb52a2
+  - enabled: 1
+    path: Assets/Scenes/Singleplayer/HardSingleplayer.unity
+    guid: be7ac3ec40ca34a40ae3d6b65d05ac63
+  - enabled: 1
+    path: Assets/Scenes/Singleplayer/ImpossibleSingleplayer.unity
+    guid: d07044b427c14b847a31fd8954c80f38
   m_configObjects: {}
