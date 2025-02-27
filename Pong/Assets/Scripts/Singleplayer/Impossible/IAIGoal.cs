@@ -27,6 +27,8 @@ public class IAIGoal : MonoBehaviour
                 return;
             }
 
+            SoundManager.instance.PlayScore();
+
             if (!isPlayer1Goal)
             {
                 Debug.Log("Player 1 Scored...");
