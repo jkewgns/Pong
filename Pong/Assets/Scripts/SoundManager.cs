@@ -6,12 +6,8 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
 
-    public AudioClip paddleHit1;
-    public AudioClip paddleHit2;
-    public AudioClip wallHit;
-    public AudioClip score;
-
-    private AudioSource audioSource;
+    public AudioClip paddleHit1, paddleHit2, wallHit, score;
+    public AudioSource audioSource;
 
     void Awake()
     {

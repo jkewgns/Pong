@@ -36,6 +36,8 @@ public class HAIPaddle : MonoBehaviour
 
             float moveDirection = Mathf.Clamp(targetY - paddleY, -1, 1);
 
+            transform.position += new Vector3(0, moveDirection * speed * Time.deltaTime, 0);
+
             rb.velocity = new Vector2(0, moveDirection * speed);
 
             nextMoveTime = Time.time + aiReactionTime;

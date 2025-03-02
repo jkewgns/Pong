@@ -1303,6 +1303,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &653081494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653081496}
+  - component: {fileID: 653081495}
+  m_Layer: 0
+  m_Name: FPSLock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &653081495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653081494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b91a4e7ad31c74bb22fb5344a04e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &653081496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653081494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 401.536, y: 306.53342, z: 2.1286829}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135628293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,8 +1720,8 @@ MonoBehaviour:
   player1Goal: {fileID: 1570746847}
   player2Paddle: {fileID: 1203496753}
   player2Goal: {fileID: 44373768}
-  Player1Text: {fileID: 1620108140}
-  Player2Text: {fileID: 326935384}
+  Player1Text: {fileID: 326935384}
+  Player2Text: {fileID: 1620108140}
 --- !u!4 &1211608744
 Transform:
   m_ObjectHideFlags: 0
@@ -2235,6 +2279,7 @@ MonoBehaviour:
   paddleHit2: {fileID: 8300000, guid: 1a496e5144e44a744952814bdec6873f, type: 3}
   wallHit: {fileID: 8300000, guid: 38c0d1ec7f7b3dd4dbab7ea5b1520fba, type: 3}
   score: {fileID: 8300000, guid: 23c06c0a8b61922479da62371b75c5f2, type: 3}
+  audioSource: {fileID: 0}
 --- !u!4 &1863897439
 Transform:
   m_ObjectHideFlags: 0
@@ -2334,3 +2379,4 @@ SceneRoots:
   - {fileID: 439913762}
   - {fileID: 1937469065}
   - {fileID: 1863897439}
+  - {fileID: 653081496}
